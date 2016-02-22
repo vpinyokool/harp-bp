@@ -1,0 +1,43 @@
+// local mixin
+@mixin title() {
+	color: $darkest;
+	display: block;
+	font-weight: 500;
+	font-family: $font-reg;
+	line-height: 1.1;
+
+	header & {
+		color: $white;
+	}
+}
+
+// custom styles
+.title-lrg {
+	@include ms-respond(font-size, 7);
+	@include title;
+
+	letter-spacing: -1px;
+}
+
+.title-med {
+	@include ms-respond(font-size, 5);
+	@include title;
+}
+
+.title-sml {
+	@include ms-respond(font-size, 3);
+	@include title;
+}
+
+.custom-title {
+	@include title();
+	font-size: 7vw;
+
+	@include breakpoint($med) {
+		font-size: 5vw;
+	}
+
+	@include breakpoint($sml) {
+		font-size: 3vw;
+	}
+}

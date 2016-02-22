@@ -1,0 +1,15 @@
+{
+  "name": "style",
+  "dependencies": {
+    "susy": "~2.2.5",
+    "bourbon": "~4.2.3",
+    "flickity": "~1.1.2",
+    "moment": "~2.11.2",
+    "modular-scale": "2.1.1",
+    "breakpoint-sass": "~2.6.1"
+  },
+  "devDependencies": {
+    "bower": "*",
+    "install": "~1.0.4"
+  }
+}

@@ -1,0 +1,32 @@
+// paragraph
+p {
+  @include ms-respond(font-size, 2);
+  line-height: 1.5;
+  margin: $base-padding*5 0;
+}
+
+// eyebrow
+.eyebrow,
+.section-label {
+  @include ms-respond(font-size, 1);
+
+  color: $darkest;
+  font-weight: 500;
+
+  header & {
+    color: $white;
+  }
+}
+
+.accent-eyebrow {
+  @include ms-respond(font-size, 1);
+
+  color: $brand-accent;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  header & {
+    color: $brand-accent-midnight;
+  }
+}

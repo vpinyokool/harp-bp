@@ -1,0 +1,19 @@
+// Shared
+.inner-wrapper {
+
+}
+
+.outer-row {
+
+}
+
+.inner-row {
+	@include susy-container();
+}
+
+// Header
+header {
+	background-color: $darkest;
+	padding: 10vh 0;
+}
+

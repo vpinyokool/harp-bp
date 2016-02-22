@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $black;
+  outline: 0;
+}
+
+body {
+  @include font-smoothing();
+  @include ms-respond(font-size, 1);
+
+  font-family: $font-reg;
+  font-weight: 400;
+  font-size: 100%;
+  text-rendering: geometricPrecision;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+  color: $white;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+strong {
+  font-weight: normal;
+}
+
+
+////////////////////////////////////////
+// loader
+////////////////////////////////////////
+
+#global-loader {
+  background-color: $primary;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+#local-loader {
+  @include transform(translateX(-100%));
+  background-color: darken($primary, 10%);
+  height: 100%;
+  pointer-events: none;
+  position: fixed;
+  visibility: visible;
+  width: 100%;
+  z-index: 3;
+
+}

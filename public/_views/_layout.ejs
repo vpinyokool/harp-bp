@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link href="/assets/css/main.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+  <div id="global-loader"></div>
+  <div id="local-loader"></div>
+  <section id="wrapper " class="wrapper">
+    <%- partial("../_modules/_nav") %>
+    <main>
+    <% if ( current.path[0] == 'posts' ) { %>
+    <%- partial("../_modules/_header", {mode:"article"}) %>
+    <section class="outer-row">
+      <div class="inner-row">
+        <%- yield %>
+      </div>
+    </section>
+    <% } else { %>
+    <%- yield %>
+    <% } %>
+    </main>
+    <%- partial("../_modules/_footer") %>
+  </section>
+</body>
+<script src="/assets/js/dist/all.js" ></script>
+</html>
+
+

@@ -1,0 +1,37 @@
+/**
+ * CSS structure
+ *
+ * 1. Tools...................Default mixins, functions and config variables.
+ * 2. Libs....................Vendor libraries
+ * 3. Base....................Variables, grids, Unclassed HTML elements (type selectors).
+ * 4. Components..............Atomic UI components
+ * 5. Modules.................Organized group of components (shared and page specific)
+ */
+
+
+// Tools
+@import 'tools/config';
+@import 'tools/mixins';
+
+// Libs
+@import 'public/lib/susy/sass/susy';
+@import 'public/lib/breakpoint-sass/stylesheets/breakpoint';
+@import 'public/lib/modular-scale/stylesheets/_modular-scale.scss';
+@import 'public/lib/bourbon/app/assets/stylesheets/bourbon';
+
+// Base
+@import 'base/variables';
+@import 'base/normalized';
+@import 'base/global';
+@import 'base/grid';
+@import 'base/typography';
+
+// Components
+@import 'componenets/container';
+@import 'componenets/titles';
+@import 'componenets/copy';
+@import 'componenets/forms';
+@import 'componenets/buttons';
+
+// Shared Modules
+@import 'modules/shared/article-listing';

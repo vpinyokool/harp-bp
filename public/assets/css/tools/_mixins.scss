@@ -1,0 +1,99 @@
+// grid
+
+@mixin susy-container {
+  @include container($max-width);
+
+  padding-left: 9%;
+  padding-right: 9%;
+
+  @include breakpoint($max-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include breakpoint($sml) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+// presentational
+
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .basic-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin fixed-center($offset) {
+  position: fixed;
+  width: auto;
+  left: $offset;
+  right: $offset;
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin underline($color: $link-underline-color, $weight: $link-underline-width, $offset: $link-underline-offset) {
+  background-image: linear-gradient(bottom, transparent, transparent $offset, $color $offset, $color $offset + $weight, transparent $offset + $weight);
+}
+
+
+
+@mixin retina-bg ($url, $file-type, $width: auto, $repeat: no-repeat, $ratio: 1.5, $suffix: "@2x") {
+
+  background: url($url + '.' + $file-type);
+  background-repeat: $repeat;
+
+
+  @media only screen and (-webkit-min-device-pixel-ratio: $ratio),
+    only screen and (min--moz-device-pixel-ratio: $ratio),
+    only screen and (-o-min-device-pixel-ratio: #{$ratio}/1),
+    only screen and (min-resolution: #{round($ratio*96)}dpi),
+    only screen and (min-resolution: #{$ratio}dppx) {
+
+    background: url($url + $suffix + '.' + $file-type);
+    background-size: $width auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+// utilities
+
+@mixin debug-colors( $color: transparent ) {
+  @if $devmode {
+    background-color: $color;
+  }
+}
+

@@ -1,0 +1,31 @@
+<% if(mode === "home") { %>
+
+<header>
+	<div class="inner-row">
+		<div class="eyebrow">
+			eyebrow
+		</div>
+		<div class="title-lrg">
+			Large Title here
+		</div>
+	</div>
+</header>
+
+<% } else { %>
+
+<header>
+	<div class="inner-row">
+		<div class="eyebrow">
+			eyebrow
+		</div>
+		<div class="title-lrg">
+			<%= title %>
+		</div>
+		<div class="title-sml">
+			<%= deck %>
+		</div>
+	</div>
+</header>
+
+<% } %>
+
