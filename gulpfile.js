@@ -40,7 +40,7 @@ gulp.task('serve', function () {
     /**
      * Watch for all other changes, reload the whole page
      */
-    gulp.watch(["public/**/*.ejs", "public/**/*.jade" "public/**/*.json", "public/**/*.js"], function () {
+    gulp.watch(["public/**/*.ejs", "public/**/*.jade", "public/**/*.json", "public/**/*.js"], function () {
       reload();
     });
 
