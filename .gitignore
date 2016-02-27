@@ -3,4 +3,5 @@ node_modules
 .tmp
 .sass-cache/
 public/lib
+bower_components/
 www

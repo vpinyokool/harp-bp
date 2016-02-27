@@ -14,10 +14,10 @@
 @import 'tools/mixins';
 
 // Libs
-@import 'public/lib/susy/sass/susy';
-@import 'public/lib/breakpoint-sass/stylesheets/breakpoint';
-@import 'public/lib/modular-scale/stylesheets/_modular-scale.scss';
-@import 'public/lib/bourbon/app/assets/stylesheets/bourbon';
+@import 'bower_components/susy/sass/susy';
+@import 'bower_components/breakpoint-sass/stylesheets/breakpoint';
+@import 'bower_components/modular-scale/stylesheets/_modular-scale.scss';
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 
 // Base
 @import 'base/variables';
