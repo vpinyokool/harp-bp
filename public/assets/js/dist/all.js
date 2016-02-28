@@ -4904,15 +4904,21 @@ $(function() {
                 .decodeHTML();
 
             // on page load hide loader
-            TweenMax.to(localLoader, duration*.001, {
+            TweenMax.to(localLoader, duration, {
                 x: '100%',
                 ease:Power4.easeOut
             });
 
+            // move the loader back
+            TweenMax.set(localLoader, {
+                x: '-100%',
+                delay: duration
+            });
+
             // clear props of  local loader
-            TweenMax.set($('#local-loader'), {
+            TweenMax.set(localLoader, {
                 clearProps: 'all',
-                delay: duration*.001
+                delay: duration
             });
 
             // on page load run functions needed
@@ -4920,12 +4926,38 @@ $(function() {
         },
 
         loadPage = function(href) {
+
+            console.log('should have scroll top right here');;
+
             // load page page after 1500
             setTimeout(function(){
+
+                $(window).scrollTop(0)
+
                 // load the page
                 $main.load(href + ' main>*', ajaxLoad);
 
-            },duration );
+            },duration * 1000 );
+        },
+        loadPreviousPage = function(href) {
+
+            // expand loader
+            TweenMax.to(localLoader, duration, {
+                x: 0,
+                ease:Power4.easeOut
+            });
+
+            $(window).scrollTop();
+
+            // load page page after 1500
+            setTimeout(function(){
+
+                $(window).scrollTop(0)
+
+                // load the page
+                $main.load(href + ' main>*', ajaxLoad);
+
+            }, duration * 1000 );
         };
 
     ////////////////////////////////////////////////
@@ -4936,12 +4968,12 @@ $(function() {
     call.firstInit();
     init();
     var localLoader = $('#local-loader');
-    var duration = 1200;
+    var duration = .8;
 
     // listen for popstate
     $(window).on("popstate", function(e) {
         // if (e.originalEvent.state !== null) {
-            loadPage(location.href);
+            loadPreviousPage(location.href);
         // }
     });
 
@@ -4949,8 +4981,8 @@ $(function() {
     $(document).on('click', 'a', function() {
         var href = $(this).attr('href');
 
-        // animate top to 0
-        TweenMax.to(localLoader, duration*.001, {
+        // expand loader
+        TweenMax.to(localLoader, duration, {
             x: 0,
             ease:Power4.easeOut
         });

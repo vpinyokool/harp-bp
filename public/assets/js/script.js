@@ -74,8 +74,14 @@ $(function() {
         },
 
         loadPage = function(href) {
+
+            console.log('should have scroll top right here');;
+
             // load page page after 1500
             setTimeout(function(){
+
+                $(window).scrollTop(0)
+
                 // load the page
                 $main.load(href + ' main>*', ajaxLoad);
 
@@ -89,8 +95,13 @@ $(function() {
                 ease:Power4.easeOut
             });
 
+            $(window).scrollTop();
+
             // load page page after 1500
             setTimeout(function(){
+
+                $(window).scrollTop(0)
+
                 // load the page
                 $main.load(href + ' main>*', ajaxLoad);
 
