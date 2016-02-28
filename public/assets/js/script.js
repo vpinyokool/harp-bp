@@ -75,11 +75,13 @@ $(function() {
 
         loadPage = function(href) {
 
-            // scroll to top
-            $(window).scrollTop(0)
 
             // load page
-            setTimeout(function(){
+            setTimeout(function() {
+
+                // scroll to top
+                $(window).scrollTop(0)
+
                 // load the page
                 $main.load(href + ' main>*', ajaxLoad);
 

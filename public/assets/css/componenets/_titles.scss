@@ -16,12 +16,16 @@
 	@include ms-respond(font-size, 7);
 	@include title;
 
+	font-family: $font-serif;
+	font-weight: 400;
 	letter-spacing: -1px;
 }
 
 .title-med {
 	@include ms-respond(font-size, 5);
 	@include title;
+
+	font-weight: 300;
 }
 
 .title-sml {

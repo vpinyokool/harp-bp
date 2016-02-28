@@ -4927,38 +4927,18 @@ $(function() {
 
         loadPage = function(href) {
 
-            console.log('should have scroll top right here');;
 
-            // load page page after 1500
-            setTimeout(function(){
+            // load page
+            setTimeout(function() {
 
-                $(window).scrollTop(0)
-
-                // load the page
-                $main.load(href + ' main>*', ajaxLoad);
-
-            },duration * 1000 );
-        },
-        loadPreviousPage = function(href) {
-
-            // expand loader
-            TweenMax.to(localLoader, duration, {
-                x: 0,
-                ease:Power4.easeOut
-            });
-
-            $(window).scrollTop();
-
-            // load page page after 1500
-            setTimeout(function(){
-
+                // scroll to top
                 $(window).scrollTop(0)
 
                 // load the page
                 $main.load(href + ' main>*', ajaxLoad);
 
             }, duration * 1000 );
-        };
+        }
 
     ////////////////////////////////////////////////
     // start here
@@ -4972,8 +4952,15 @@ $(function() {
 
     // listen for popstate
     $(window).on("popstate", function(e) {
+
+        // expand loader
+        TweenMax.to(localLoader, duration, {
+            x: 0,
+            ease:Power4.easeOut
+        });
+
         // if (e.originalEvent.state !== null) {
-            loadPreviousPage(location.href);
+            loadPage(location.href);
         // }
     });
 

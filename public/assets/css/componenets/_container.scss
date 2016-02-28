@@ -11,6 +11,10 @@
 	@include susy-container();
 }
 
+.inner-row img {
+	width: 100%;
+}
+
 // Header
 header {
 	background-color: $darkest;

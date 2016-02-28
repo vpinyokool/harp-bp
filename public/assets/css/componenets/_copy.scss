@@ -1,9 +1,27 @@
 // paragraph
 p {
   @include ms-respond(font-size, 2);
+
+  color: $darker;
   line-height: 1.5;
   margin: $base-padding*5 0;
 }
+
+// deck
+
+.deck {
+  @include ms-respond(font-size, 2);
+
+  color: $darkest;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 1.5;
+
+  header & {
+    color: $dark;
+  }
+}
+
 
 // eyebrow
 .eyebrow,
@@ -11,7 +29,8 @@ p {
   @include ms-respond(font-size, 1);
 
   color: $darkest;
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 20px;
 
   header & {
     color: $white;
@@ -28,5 +47,25 @@ p {
 
   header & {
     color: $brand-accent-midnight;
+  }
+}
+
+blockquote,
+q {
+  @include ms-respond(font-size, 3);
+
+  font-family: $font-serif;
+  color: $darker;
+
+  &:before {
+    @include ms-respond(font-size, 4);
+
+content: '“';
+    color: $primary;
+    margin-right: 20px;
+  }
+
+  &:after {
+    content: '';
   }
 }

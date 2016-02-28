@@ -7,8 +7,8 @@
 $white: #fff;
 $black: #333;
 
-$lightest: #fcfaf7;
-$darkest: #314354;
+$lightest: #FAFAFC;
+$darkest: #343B42;
 $lighter: darken($lightest, 3%);
 $light: mix($lightest, $darkest, 90.2%);
 $dark: mix($lightest, $darkest, 61%);
@@ -23,7 +23,7 @@ $brand-accent-midnight: #cc7d41;
 
 // Functional
 
-$primary: #00a0c4;
+$primary: #1689FF;
 $secondary: $darkest;
 $secondary-midnight: $white;
 $disabled: #ededed;
@@ -53,6 +53,7 @@ $sml: max-width $sml-width;
 //
 
 $font-reg: 'graphik', helvetica;
+$font-serif: 'publico', helvetica;
 
 // Modular scales
 
