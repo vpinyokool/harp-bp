@@ -1,0 +1,80 @@
+<%
+	var stylesData = public.content.styleguide._data;
+%>
+<!-- colors -->
+<section class="outer-row">
+	<div class="inner-row">
+		<h1>
+			Colors
+		</h1>
+
+		<% for ( var i=0; i < stylesData.colors.length; i++ ) { %>
+			<div class="colorset">
+				<h1>
+					<%= stylesData.colors[i].type %>
+				</h1>
+				<% for ( var j=0; j < stylesData.colors[i].content.length; j++ ) { %>
+					<div class="figure-wrapper">
+						<figure class="color">
+							<%= stylesData.colors[i].content[j].name %>
+						</figure>
+						<figcaption>
+							<%= stylesData.colors[i].content[j].caption %>
+						</figcaption>
+					</div>
+				<% } %>
+			</div>
+
+		<% } %>
+	</div>
+</section>
+
+<!--Typography -->
+
+<section class="outer-row">
+	<div class="inner-row">
+		<h1>
+			Typography
+		</h1>
+
+		<% for ( var i=0; i < stylesData.typography.length; i++ ) { %>
+			<div class="typographyet">
+				<h1>
+					<%= stylesData.typography[i].type %>
+				</h1>
+				<% for ( var j=0; j < stylesData.typography[i].content.length; j++ ) { %>
+					<div class="figure-wrapper">
+						<figure class="color">
+							<%= stylesData.typography[i].content[j].name %>
+						</figure>
+						<figcaption>
+							<%= stylesData.typography[i].content[j].caption %>
+						</figcaption>
+					</div>
+				<% } %>
+			</div>
+
+		<% } %>
+	</div>
+</section>
+
+<!--Typestyles -->
+
+<section class="outer-row">
+	<div class="inner-row">
+		<h1>
+			typestyles
+		</h1>
+
+		<% for ( var i=0; i < stylesData.typestyles.length; i++ ) { %>
+				<h1>
+					<%= stylesData.typestyles[i].name %>
+				</h1>
+				<div class="<%= stylesData.typestyles[i].class %>">
+					<%= stylesData.typestyles[i].content %>
+				</div>
+				<p class="caption"></p>
+
+		<% } %>
+	</div>
+</section>

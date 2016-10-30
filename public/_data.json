@@ -1,10 +1,10 @@
 {
 	"index":{
 		"title":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-		"layout": "_views/_layout"
+		"layout": "library/_views/_layout"
 	},
-	"style-guide":{
+	"styleguide":{
 		"title":"style-guide",
-		"layout": "_views/_layout"
+		"layout": "library/_views/_layout"
 	}
 }
