@@ -66,15 +66,15 @@
 			"type":"accents",
 			"content":[
 				{
-				"name":"colorname",
+				"name":"brand-accent",
 				"caption":"colorCaption"
 				},
 				{
-				"name":"colorname",
+				"name":"brand-dark",
 				"caption":"colorCaption"
 				},
 				{
-				"name":"colorname",
+				"name":"brand-light",
 				"caption":"colorCaption"
 				}
 			]
@@ -104,20 +104,64 @@
 		{
 			"name":"title-lrg",
 			"class":"title-lrg",
-			"content":"I am a large title",
+			"content":"American Gothic, 1930 by Grant Wood",
 			"caption":"this is a large title"
 		},
 		{
 			"name":"title-med",
 			"class":"title-med",
-			"content":"I am a medium title",
+			"content":"I told you homeboy u can’t touch this",
 			"caption":"this is a medium title"
 		},
 		{
 			"name":"title-sml",
 			"class":"title-sml",
-			"content":"I am a small title",
+			"content":"Dance to this and you’re gonna get thinnerFresh new kicks and pants",
 			"caption":"this is a small title"
+		},
+		{
+			"name":"title-sml",
+			"class":"deck",
+			"content":"A super dope homeboy from the Oaktown",
+			"caption":"this is deck"
+		},
+		{
+			"name":"title-sml",
+			"class":"eyebrow",
+			"content":"Nighthawks",
+			"caption":"this is an eyebrow"
+		}
+	],
+	"buttons":[
+		{
+			"type":"primary",
+			"cta":"Primary Button",
+			"class":"",
+			"disable":false,
+			"caption":"this is a primary button"
+		},
+		{
+			"type":"secondary",
+			"cta":"Secondary Button",
+			"class":"",
+			"disable":false,
+			"caption":"this is a secondary button"
+		},
+		{
+			"type":"tertiary",
+			"cta":"Tertiary Button",
+			"class":"",
+			"disable":false,
+			"caption":"this is a tertiary button"
+		}
+	],
+	"inputs":[
+		{
+			"type":"text",
+			"name":"full-name",
+			"label":"Full Name",
+			"placeholder":"John Smith",
+			"caption":"this is an input form-field"
 		}
 	]
 }

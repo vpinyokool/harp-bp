@@ -18,7 +18,7 @@
 						<figure class="<%= stylesData.colors[i].content[j].name %>">
 						</figure>
 						<figcaption>
-							<%= stylesData.colors[i].content[j].caption %>
+							$<%= stylesData.colors[i].content[j].name %>
 						</figcaption>
 					</div>
 				<% } %>
@@ -63,7 +63,7 @@
 <section class="outer-row">
 	<div class="inner-row">
 		<h1 class="styleguide-title">
-			typestyles
+			Typestyles
 		</h1>
 
 		<% for ( var i=0; i < stylesData.typestyles.length; i++ ) { %>
@@ -73,5 +73,59 @@
 				<p class="caption"><%= stylesData.typestyles[i].caption %></p>
 
 		<% } %>
+	</div>
+</section>
+
+
+<!--Ui -->
+
+<section class="outer-row">
+	<div class="inner-row">
+		<h1 class="styleguide-title">
+			Ui
+		</h1>
+
+		<% for ( var i=0; i < stylesData.buttons.length; i++ ) { %>
+				<div class="<%= stylesData.buttons[i].class %>">
+					<%= stylesData.buttons[i].content %>
+				</div>
+				<%- partial("/library/_components/_button", {
+				buttonType:stylesData.buttons[i].type,
+				buttonCTA: stylesData.buttons[i].cta,
+				buttonClass: stylesData.buttons[i].class,
+				isDisable: stylesData.buttons[i].disable
+				}) %>
+				<p class="caption"><%= stylesData.buttons[i].caption %></p>
+
+		<% } %>
+
+	</div>
+</section>
+
+
+<!--Input -->
+
+<section class="outer-row">
+	<div class="inner-row">
+		<h1 class="styleguide-title">
+			Input
+		</h1>
+		<% for ( var i=0; i < stylesData.inputs.length; i++ ) {
+			if ( stylesData.inputs[i].type = 'text') { %>
+				<div class="input-wrapper">
+					<input
+						type="text"
+						placeholder="<%= stylesData.inputs[i].placeholder %>"
+						id="<%= stylesData.inputs[i].name %>"
+						name="<%= stylesData.inputs[i].name %>"
+					/>
+					<label for="full-name"><%= stylesData.inputs[i].label %></label>
+				</div>
+				<p class="caption"><%= stylesData.inputs[i].caption %></p>
+		<%	}
+ 		 } %>
+
+
+
 	</div>
 </section>

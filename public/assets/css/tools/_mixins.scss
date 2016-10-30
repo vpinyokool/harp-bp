@@ -19,6 +19,20 @@
 
 // presentational
 
+// Placeholders
+@mixin placeholder {
+  @each $placeholder
+    in "::-webkit-input-placeholder",
+    ":-moz-placeholder",
+    "::-moz-placeholder",
+    ":-ms-input-placeholder" {
+
+    &#{$placeholder} {
+      @content;
+    }
+  }
+}
+
 
 @mixin font-smoothing($value: antialiased) {
   @if $value == antialiased {

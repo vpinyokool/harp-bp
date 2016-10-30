@@ -131,9 +131,18 @@ p,
 }
 
 // caption
-
-figcaption, .caption, caption {
+.caption,
+figcaption,
+caption {
 	@include ms-respond(font-size, 0);
 	text-transform: uppercase;
 	font-weight: 500;
+  color: $darker;
+}
+
+// anchor lunks
+a,
+a:visited,
+.link {
+  color: $primary;
 }

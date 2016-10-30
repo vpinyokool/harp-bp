@@ -1,4 +1,29 @@
-a,
-a:visited {
-	color: $primary;
+// local mixin
+@mixin button() {
+	@include ms-respond(font-size, 0);
+	color: $white;
+	display: inline-block;
+	font-weight: 500;
+	font-family: $font-reg;
+	border: 0;
+	outline: 0;
+	line-height: 1.1;
+	padding: 20px 30px;
+	border-radius: 3px;
+}
+
+button {
+	@include button();
+}
+
+.btn-primary {
+	background-color: $primary;
+}
+
+.btn-secondary {
+	background-color: $secondary;
+}
+
+.btn-tertiary {
+	background-color: $secondary;
 }

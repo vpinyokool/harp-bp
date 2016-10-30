@@ -15,7 +15,8 @@
 }
 
 .sg .caption {
-	margin-top: 20px;
+	margin-top: 15px;
+	margin-bottom: 50px;
 }
 
 
@@ -79,6 +80,7 @@ $color-swatch-size: 160px;
 
 		&.white {
 			background-color: $white;
+			border: 2px solid $lighter;
 		}
 
 		&.darkest {
@@ -104,10 +106,31 @@ $color-swatch-size: 160px;
 		&.lightest {
 			background-color: $lightest;
 		}
+
+		&.brand-light {
+			background-color: $brand-light;
+		}
+
+		&.brand-dark {
+			background-color: $brand-dark;
+		}
+
+		&.brand-accent {
+			background-color: $brand-accent;
+		}
 	}
 
 	figcaption {
+		border-top: 2px solid $lighter;
+		padding-top: 20px;
 		text-align: center;
 	}
 }
 
+/////////////////////
+// input
+/////////////////////
+
+input {
+	max-width: 30vw;
+}
