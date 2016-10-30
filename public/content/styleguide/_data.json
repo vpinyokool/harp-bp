@@ -74,20 +74,20 @@
 	],
 	"typestyles":[
 		{
-			"name":"title-large",
-			"class":"title-large",
+			"name":"title-lrg",
+			"class":"title-lrg",
 			"content":"I am a large title",
 			"caption":"this is a large title"
 		},
 		{
-			"name":"title-medium",
-			"class":"title-medium",
+			"name":"title-med",
+			"class":"title-med",
 			"content":"I am a medium title",
 			"caption":"this is a medium title"
 		},
 		{
-			"name":"title-small",
-			"class":"title-small",
+			"name":"title-sml",
+			"class":"title-sml",
 			"content":"I am a small title",
 			"caption":"this is a small title"
 		}

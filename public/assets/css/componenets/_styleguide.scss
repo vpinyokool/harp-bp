@@ -1,0 +1,54 @@
+/////////////////////
+// containers
+/////////////////////
+
+.sg .outer-row {
+	padding: 0 5vw;
+}
+.sg .inner-row {
+	padding: 3vw 0 0;
+	border-bottom: 2px solid $light;
+}
+
+
+
+/////////////////////
+// titles
+/////////////////////
+
+h1.styleguide-title {
+	@include ms-respond(font-size, 8);
+
+	font-family: $font-reg;
+	font-weight: 200;
+	margin-bottom: 2vw;
+}
+
+
+
+/////////////////////
+// colors
+/////////////////////
+
+$color-swatch-size: 10vw;
+
+.colorset .figure-wrapper {
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-right: 3vw;
+}
+
+.colorset {
+	figure {
+		width: $color-swatch-size;
+		height: $color-swatch-size;
+		border-radius: 50%;
+		background-color: red;
+		margin-bottom: 10px;
+	}
+
+	figcaption {
+		text-align: center;
+	}
+}
+

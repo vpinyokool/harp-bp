@@ -11,7 +11,17 @@
 	}
 }
 
+
+
+////////////////////////////
 // custom styles
+////////////////////////////
+
+// headings
+
+h1,
+h2,
+h3,
 .title-lrg {
 	@include ms-respond(font-size, 7);
 	@include title;
@@ -21,6 +31,8 @@
 	letter-spacing: -1px;
 }
 
+h4,
+h5,
 .title-med {
 	@include ms-respond(font-size, 5);
 	@include title;
@@ -28,6 +40,7 @@
 	font-weight: 300;
 }
 
+h6,
 .title-sml {
 	@include ms-respond(font-size, 3);
 	@include title;
@@ -44,4 +57,31 @@
 	@include breakpoint($sml) {
 		font-size: 3vw;
 	}
+}
+
+
+
+// deck and subhrad
+
+.eyebrow {
+	@include ms-respond(font-size, 1);
+}
+
+.deck {
+	font-family: $font-serif;
+	@include ms-respond(font-size, 1);
+}
+
+// body
+p,
+.body {
+	@include ms-respond(font-size, 1);
+}
+
+// caption
+
+figcaption, .caption, caption {
+	@include ms-respond(font-size, 0);
+	text-transform: uppercase;
+	font-weight: 500;
 }

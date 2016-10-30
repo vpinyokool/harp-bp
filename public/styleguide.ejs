@@ -4,19 +4,18 @@
 <!-- colors -->
 <section class="outer-row">
 	<div class="inner-row">
-		<h1>
+		<h1 class="styleguide-title">
 			Colors
 		</h1>
 
 		<% for ( var i=0; i < stylesData.colors.length; i++ ) { %>
 			<div class="colorset">
-				<h1>
+				<div class="eyebrow">
 					<%= stylesData.colors[i].type %>
-				</h1>
+				</div>
 				<% for ( var j=0; j < stylesData.colors[i].content.length; j++ ) { %>
 					<div class="figure-wrapper">
-						<figure class="color">
-							<%= stylesData.colors[i].content[j].name %>
+						<figure class="<%= stylesData.colors[i].content[j].name %>">
 						</figure>
 						<figcaption>
 							<%= stylesData.colors[i].content[j].caption %>
@@ -33,26 +32,27 @@
 
 <section class="outer-row">
 	<div class="inner-row">
-		<h1>
+		<h1 class="styleguide-title">
 			Typography
 		</h1>
 
 		<% for ( var i=0; i < stylesData.typography.length; i++ ) { %>
-			<div class="typographyet">
-				<h1>
+
+				<div class="eyebrow">
 					<%= stylesData.typography[i].type %>
-				</h1>
+				</div>
 				<% for ( var j=0; j < stylesData.typography[i].content.length; j++ ) { %>
-					<div class="figure-wrapper">
-						<figure class="color">
-							<%= stylesData.typography[i].content[j].name %>
-						</figure>
-						<figcaption>
+					<div class="title-med">
+							ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+							abcdefghijklmnopqrstuvwxyz<br>
+							1234567890<br>
+							$¢£¥€&#§*†‡¶©®™@<br>
+						<p class="caption">
 							<%= stylesData.typography[i].content[j].caption %>
-						</figcaption>
+						</p>
 					</div>
 				<% } %>
-			</div>
+
 
 		<% } %>
 	</div>
@@ -62,18 +62,15 @@
 
 <section class="outer-row">
 	<div class="inner-row">
-		<h1>
+		<h1 class="styleguide-title">
 			typestyles
 		</h1>
 
 		<% for ( var i=0; i < stylesData.typestyles.length; i++ ) { %>
-				<h1>
-					<%= stylesData.typestyles[i].name %>
-				</h1>
 				<div class="<%= stylesData.typestyles[i].class %>">
 					<%= stylesData.typestyles[i].content %>
 				</div>
-				<p class="caption"></p>
+				<p class="caption"><%= stylesData.typestyles[i].caption %></p>
 
 		<% } %>
 	</div>

@@ -28,8 +28,12 @@
     </div>
 
     <%- partial("../_modules/_article-listing") %>
+    <% } else if ( current.path[0] == 'styleguide' ) { %>
+      <div class="inner-wrapper sg">
+        <%- yield %>
+      </div>
     <% } else { %>
-    <%- yield %>
+      <%- yield %>
     <% } %>
     </main>
     <%- partial("../_modules/_footer") %>
