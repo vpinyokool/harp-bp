@@ -61,21 +61,73 @@ h6,
 
 
 
-// deck and subhrad
+// deck and subhread
 
-.eyebrow {
-	@include ms-respond(font-size, 1);
+.eyebrow,
+.section-label {
+  @include ms-respond(font-size, 1);
+
+  color: $darkest;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  header & {
+    color: $white;
+  }
+}
+
+.accent-eyebrow {
+  @include ms-respond(font-size, 1);
+
+  color: $brand-accent;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  header & {
+    color: $brand-accent-midnight;
+  }
+}
+
+blockquote,
+q {
+  @include ms-respond(font-size, 3);
+
+  font-family: $font-serif;
+  color: $darker;
+
+  &:before {
+    @include ms-respond(font-size, 4);
+
+content: '“';
+    color: $primary;
+    margin-right: 20px;
+  }
+
+  &:after {
+    content: '';
+  }
 }
 
 .deck {
-	font-family: $font-serif;
-	@include ms-respond(font-size, 1);
+  @include ms-respond(font-size, 2);
+
+  color: $darkest;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 1.5;
+
+  header & {
+    color: $dark;
+  }
 }
 
 // body
 p,
 .body {
-	@include ms-respond(font-size, 1);
+	@include ms-respond(font-size, 2);
+	color: $darker;
+	line-height: 1.5;
 }
 
 // caption

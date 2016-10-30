@@ -6,8 +6,16 @@
 	padding: 0 5vw;
 }
 .sg .inner-row {
-	padding: 3vw 0 0;
+	padding: 3vw 0 5vw;
 	border-bottom: 2px solid $light;
+}
+
+.sg .eyebrow {
+	margin-top: 40px;
+}
+
+.sg .caption {
+	margin-top: 20px;
 }
 
 
@@ -30,7 +38,7 @@ h1.styleguide-title {
 // colors
 /////////////////////
 
-$color-swatch-size: 10vw;
+$color-swatch-size: 160px;
 
 .colorset .figure-wrapper {
 	display: inline-block;
@@ -43,8 +51,59 @@ $color-swatch-size: 10vw;
 		width: $color-swatch-size;
 		height: $color-swatch-size;
 		border-radius: 50%;
-		background-color: red;
 		margin-bottom: 10px;
+
+		&.primary {
+			background-color: $primary;
+		}
+
+		&.secondary {
+			background-color: $secondary;
+		}
+
+		&.warning {
+			background-color: $warning;
+		}
+
+		&.danger {
+			background-color: $danger;
+		}
+
+		&.success {
+			background-color: $success;
+		}
+
+		&.black {
+			background-color: $black;
+		}
+
+		&.white {
+			background-color: $white;
+		}
+
+		&.darkest {
+			background-color: $darkest;
+		}
+
+		&.darker {
+			background-color: $darker;
+		}
+
+		&.dark {
+			background-color: $dark;
+		}
+
+		&.light {
+			background-color: $light;
+		}
+
+		&.lighter {
+			background-color: $lighter;
+		}
+
+		&.lightest {
+			background-color: $lightest;
+		}
 	}
 
 	figcaption {

@@ -4,15 +4,23 @@
 			"type":"functions",
 			"content":[
 				{
-				"name":"colorname",
+				"name":"primary",
 				"caption":"colorCaption"
 				},
 				{
-				"name":"colorname",
+				"name":"secondary",
 				"caption":"colorCaption"
 				},
 				{
-				"name":"colorname",
+				"name":"warning",
+				"caption":"colorCaption"
+				},
+				{
+				"name":"danger",
+				"caption":"colorCaption"
+				},
+				{
+				"name":"success",
 				"caption":"colorCaption"
 				}
 			]
@@ -21,15 +29,35 @@
 			"type":"foundation",
 			"content":[
 				{
-				"name":"colorname",
+				"name":"black",
 				"caption":"colorCaption"
 				},
 				{
-				"name":"colorname",
+				"name":"white",
 				"caption":"colorCaption"
 				},
 				{
-				"name":"colorname",
+				"name":"darkest",
+				"caption":"colorCaption"
+				},
+				{
+				"name":"darker",
+				"caption":"colorCaption"
+				},
+				{
+				"name":"dark",
+				"caption":"colorCaption"
+				},
+				{
+				"name":"light",
+				"caption":"colorCaption"
+				},
+				{
+				"name":"lighter",
+				"caption":"colorCaption"
+				},
+				{
+				"name":"lightest",
 				"caption":"colorCaption"
 				}
 			]
