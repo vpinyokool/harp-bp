@@ -1,0 +1,30 @@
+<!-- colors -->
+<section class="outer-row">
+	<div class="inner-row">
+		<h1>
+			Colors
+		</h1>
+
+		<% for ( var i=0; i < colors.length; i++ ) { %>
+			<div class="colorset">
+				<h1>
+					<%= colors[i].type %>
+				</h1>
+				<% for ( var j=0; j < colors[i].content.length; j++ ) { %>
+					<div class="figure-wrapper">
+						<figure class="color">
+							<%= colors[i].content[j].name %>
+						</figure>
+						<figcaption>
+							<%= colors[i].content[j].caption %>
+						</figcaption>
+					</div>
+				<% } %>
+			</div>
+
+		<% } %>
+	</div>
+</section>
+
+<!--Typography -->
+

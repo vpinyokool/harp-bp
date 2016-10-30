@@ -1,15 +1,11 @@
 {
   "name": "brand-x",
   "version": "0.0.2",
-  "author": "Viriya 'Q' Pinyokool <vpinyokool@hugeinc.com>",
+  "author": "Viriya 'Q' Pinyokool <vpinyokool@me.com>",
   "description": "Brand-X",
   "dependencies": {
 
     "harp": "*",
-    "react": "0.14.6",
-    "react-dom": "0.14.6",
-    "react-redux": "4.0.6",
-    "react-router": "2.0.0-rc5",
 
     "browser-sync": "2.0.1",
     "gulp-cssnano": "~2.1.0",

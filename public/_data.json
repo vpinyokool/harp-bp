@@ -2,5 +2,9 @@
 	"index":{
 		"title":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
 		"layout": "_views/_layout"
+	},
+	"style-guide":{
+		"title":"style-guide",
+		"layout": "_views/_layout"
 	}
 }
