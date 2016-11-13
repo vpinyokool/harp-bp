@@ -162,6 +162,34 @@
 			"label":"Full Name",
 			"placeholder":"John Smith",
 			"caption":"this is an input form-field"
+		},
+		{
+			"type":"text",
+			"name":"full-name",
+			"label":"Full Name",
+			"placeholder":"John Smith",
+			"caption":"this is an input form-field"
+		},
+		{
+			"type":"text",
+			"name":"fdwad;oawod;aull-name",
+			"label":"Full Name",
+			"placeholder":"John Smith",
+			"caption":"this is an input form-field"
+		},
+		{
+			"type":"text",
+			"name":"full-name",
+			"label":"Full Name",
+			"placeholder":"John Smith",
+			"caption":"this is an input form-field"
+		},
+		{
+			"type":"text",
+			"name":"dwaoidhaw0da-dwdw",
+			"label":"dowajdpoajwd",
+			"placeholder":"John Smith",
+			"caption":"this is an input form-field"
 		}
 	]
 }

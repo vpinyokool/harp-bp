@@ -2,21 +2,21 @@
 	"one": {
 		"title":"The strange style of Facebook's Trending tab",
 		"deck":"Content at its most abstract",
-		"layout": "../_views/_layout"
+		"layout": "../library/_views/_layout"
 	},
 	"two": {
 		"title":"The Verge Review of Animals: the blue whale",
 		"deck":"Way too big",
-		"layout": "../_views/_layout"
+		"layout": "../library/_views/_layout"
 	},
 	"three": {
 		"title":"The odds you'll get picked to be an astronaut are pretty low",
 		"deck":"Everyone wants to go to space, apparently",
-		"layout": "../_views/_layout"
+		"layout": "../library/_views/_layout"
 	},
 	"four": {
 		"title":"Sony could reveal 'Smart Ear' wireless earbud on Monday",
 		"deck":"Tiny headset is said to feature smart assistant features like the Moto Hint",
-		"layout": "../_views/_layout"
+		"layout": "../library/_views/_layout"
 	}
 }
